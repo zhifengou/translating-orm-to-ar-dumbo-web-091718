@@ -1,5 +1,5 @@
 class Dog<ActiveRecord::Base
-  def self.create
+  def self.create(id,name,breed)
     sql=<<-SQL
     CREATE TABLE dogs (id INTEGER PRIMARY KEY,name TEXT,breed TEXT)
     SQL
