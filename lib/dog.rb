@@ -3,7 +3,7 @@ class Dog<ActiveRecord::Base
     sql=<<-SQL
     CREATE TABLE dogs (id INTEGER PRIMARY KEY,name TEXT,breed TEXT)
     SQL
-    # ActiveRecord::Base.connection.execute(sql)
+    ActiveRecord::Base.connection.execute(sql)
   end
   
   def save 
